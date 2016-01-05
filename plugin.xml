@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-screenorientation-landscape"
+    version="1.0.21">
+	
+    <name>Cordova Screen Orientation Landscape plugin</name>
+    <description>auto lock screen orientation landscape. (fix xdk not locking ios orientation issue, for example: not restore landscape after taking camera picture)</description>
+    <author>Sang Ki Kwon (Cranberrygame)</author>		
+    <license>MIT</license>
+    <keywords>cordova,screen,orientation,landscape</keywords>
+    <repo>https://github.com/cranberrygame/cordova-plugin-screenorientation-landscape</repo>
+    <issue>https://github.com/cranberrygame/cordova-plugin-screenorientation-landscape/issues</issue> 	
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+	
+	<!-- ios -->
+	<platform name="ios">
+        <config-file target="*-Info.plist" parent="UISupportedInterfaceOrientations" overwrite="true">
+            <string></string>
+        </config-file>        
+        <config-file target="*-Info.plist" parent="UISupportedInterfaceOrientations" overwrite="true">
+			<array>
+				<string>UIInterfaceOrientationLandscapeLeft</string>
+				<string>UIInterfaceOrientationLandscapeRight</string>
+			</array>			
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="UISupportedInterfaceOrientations~ipad" overwrite="true">
+            <string></string>
+        </config-file>        
+        <config-file target="*-Info.plist" parent="UISupportedInterfaceOrientations~ipad" overwrite="true">
+			<array>
+				<string>UIInterfaceOrientationLandscapeLeft</string>
+				<string>UIInterfaceOrientationLandscapeRight</string>
+			</array>			
+        </config-file>
+	</platform>	
+</plugin>

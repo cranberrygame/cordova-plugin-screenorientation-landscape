@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-screenorientation-landscape",
+  "version": "1.0.21",
+  "description": "auto lock screen orientation landscape. (fix xdk not locking ios orientation issue, for example: not restore landscape after taking camera picture)",
+  "cordova": {
+    "id": "cordova-plugin-screenorientation-landscape",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cranberrygame/cordova-plugin-screenorientation-landscape.git"
+  },
+  "keywords": [
+    "cordova",
+    "screen",
+    "orientation",
+    "landscape",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "cranberrygame",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cranberrygame/cordova-plugin-screenorientation-landscape/issues"
+  },
+  "homepage": "https://github.com/cranberrygame/cordova-plugin-screenorientation-landscape#readme"
+}
