@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-screenorientation-landscape",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "auto lock screen orientation landscape. (fix xdk not locking ios orientation issue, for example: not restore landscape after taking camera picture)",
   "cordova": {
     "id": "cordova-plugin-screenorientation-landscape",
